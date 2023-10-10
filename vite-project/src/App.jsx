@@ -32,8 +32,8 @@ function App() {
     <>
       <div style={{backgroundColor: colors[randomNum], padding: '80px', margin: '40px'}}></div>
       {colors.map(colorId => <button key={colorId} onClick={() => checkHandler(colorId)} className='btn'>{colorId}</button>)}
-     {checker == 'Correct' && <h3>Correct!</h3>}
-     {checker == 'Wrong' && <h3>Wrong!</h3>}
+     {checker == 'Correct' && <h3 style={{color: 'green'}}>Correct!</h3>}
+     {checker == 'Wrong' && <h3 style={{color: 'red'}} >Wrong!</h3>}
     </>
   )
 }
